@@ -521,6 +521,7 @@ export default {
   themePunk: 'Punk',
   themeRiot: 'Riot',
   themeHacker: 'Hacker',
+  themeElement: 'Element',
   themeMastodon: 'Mastodon',
   themePitchBlack: 'Pitch Black',
   themeDarkGrayscale: 'Dark Grayscale',

@@ -84,6 +84,13 @@ const themes = [
     color: '#4ab92f'
   },
   {
+    name: 'element',
+    label: 'intl.themeElement',
+    dark: true,
+    color: 'orangered'
+  },
+
+  {
     name: 'mastodon',
     label: 'intl.themeMastodon',
     dark: true,
