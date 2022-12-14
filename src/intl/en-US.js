@@ -406,6 +406,7 @@ export default {
   showAbsoluteTimestamps: 'Show absolute timestamps (e.g. "March 3rd") instead of relative timestamps (e.g. "5 minutes ago")',
   ui: 'UI',
   grayscaleMode: 'Grayscale mode',
+  chatMode: 'Chat mode',
   wellnessFooter: `These settings are partly based on guidelines from the
     <a rel="noopener" target="_blank" href="https://humanetech.com">Center for Humane Technology</a>.`,
   // This is a link: "You can filter or disable notifications in the _instance settings_"

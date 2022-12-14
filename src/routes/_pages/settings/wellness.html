@@ -62,6 +62,12 @@
              bind:checked="$enableGrayscale" on:change="onChange(event)">
       {intl.grayscaleMode}
     </label>
+    <label class="setting-group">
+      <input type="checkbox" id="choice-chatmode"
+             bind:checked="$enableChatMode" on:change="onChange(event)">
+      {intl.chatMode}
+    </label>
+
   </form>
   <p>
     {intl.wellnessFooter}
@@ -96,14 +102,16 @@
           disableFavCounts,
           disableNotificationBadge,
           disableRelativeTimestamps,
-          enableGrayscale
+          enableGrayscale,
+          enableChatMode
         } = this.store.get()
         document.querySelector('#choice-check-all').checked = disableFollowerCounts &&
           disableReblogCounts &&
           disableFavCounts &&
           disableNotificationBadge &&
           disableRelativeTimestamps &&
-          enableGrayscale
+          enableGrayscale &&
+          enableChatMode
       },
       onCheckAllChange (e) {
         const { checked } = e.target
@@ -113,7 +121,8 @@
           disableFavCounts: checked,
           disableNotificationBadge: checked,
           disableRelativeTimestamps: checked,
-          enableGrayscale: checked
+          enableGrayscale: checked,
+          enableChatMode: checked
         })
         this.store.save()
       },

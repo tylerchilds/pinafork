@@ -26,6 +26,7 @@ const persistedState = {
   disableRelativeTimestamps: false,
   disableTapOnStatus: false,
   enableGrayscale: false,
+  enableChatMode: false,
   hideCards: false,
   largeInlineMedia: false,
   leftRightChangesFocus: isKaiOS(),

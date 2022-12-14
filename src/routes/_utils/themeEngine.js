@@ -46,3 +46,11 @@ export function switchToTheme (themeName = DEFAULT_THEME, enableGrayscale) {
     resetExistingTheme()
   }
 }
+
+export function toggleChatMode (enableChatMode) {
+  if (enableChatMode) {
+    console.log('todo @ty: opt-in to chat refresh')
+  } else {
+    window.location.href = window.location.href
+  }
+}

@@ -9,6 +9,7 @@ import { onUserIsLoggedOut } from '../routes/_actions/onUserIsLoggedOut.js'
 import { storeLite } from '../routes/_store/storeLite.js'
 import { isIOSPre12Point2 } from '../routes/_utils/userAgent/isIOSPre12Point2.js'
 import { isMac } from '../routes/_utils/userAgent/isMac.js'
+import '../routes/_thirdparty/module/chat-mode.js'
 
 window.__themeColors = process.env.THEME_COLORS
 
@@ -18,6 +19,7 @@ const {
   disableCustomScrollbars,
   bottomNav,
   enableGrayscale,
+  enableChatMode,
   pushSubscription,
   loggedInInstancesInOrder,
   centerNav
@@ -37,6 +39,10 @@ if (currentInstance) {
 if (theme !== INLINE_THEME || enableGrayscale) {
   // switch theme ASAP to minimize flash of default theme
   switchToTheme(theme, enableGrayscale)
+}
+
+if (enableChatMode) {
+  document.body.appendChild(document.createElement('chat-mode'))
 }
 
 if (enableGrayscale) {
