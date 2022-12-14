@@ -1,8 +1,8 @@
-# Pinafore
+# Piñafork
 
-An alternative web client for [Mastodon](https://joinmastodon.org), focused on speed and simplicity.
+An alternative web client for [Hometown](https://https://github.com/hometown-fork/hometown), focused on speed and simplicity.
 
-Pinafore is available at [pinafore.social](https://pinafore.social). Beta releases are at [dev.pinafore.social](https://dev.pinafore.social).
+Piñafork is a fork of Pinafore, which is available at [pinafore.social](https://pinafore.social).
 
 See the [user guide](https://github.com/nolanlawson/pinafore/blob/master/docs/User-Guide.md) for basic usage. See the [admin guide](https://github.com/nolanlawson/pinafore/blob/master/docs/Admin-Guide.md) if Pinafore cannot connect to your instance.
 
